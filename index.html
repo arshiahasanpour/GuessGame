@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess Game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="Game_box">
+            <div class="Game-header">
+                <span>Guess Game</span>
+            </div>
+            <div class="input_box">
+                <button class="input-submit" onclick="startGame()" id="startBtn">Start</button>
+            </div>
+            <div id="gameArea" class="hidden">
+                <div class="time">
+                    <p id="timer"></p>
+                </div>
+                <div class="input_box">
+                    <input type="text" id="guess" min="0" max="1000" class="input-field" autofocus required>
+                </div>
+                <div class="higher-lower">
+                    <div class="higher">
+                        <p id="higher">higher</p>
+                    </div>
+                    <div class="lower">
+                        <p id="lower">lower</p>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <button class="input-submit" onclick="checkGuess()" id="guessBtn">Guess</button>
+                    <p id="message" class="message"></p>
+                    <button onclick="restartGame()" id="restartBtn" class="hidden restartBtn">Play Again!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
