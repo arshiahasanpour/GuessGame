@@ -169,9 +169,10 @@ body{
   }
 
   .input_box input,
-  .input_box button {
+  .input_box button,
+  .input-submit{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 90px;
   }
   .time{
       width: 100%;
