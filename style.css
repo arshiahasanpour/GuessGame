@@ -161,13 +161,21 @@ body{
     background: var(--second-color);
 
 }
-@media only screen and (max-widgh:564px) {
-    .wrapper{
-        padding: 20px;
-    }
-    .login_box{
-            padding: 7.5em 1.5em 4em 1.5em;
-    }
+@media (max-width: 768px) {
+  .Game_box {
+    width: 90%;
+    padding: 20px;
+    font-size: 1rem;
+  }
 
-
-}
+  .input_box input,
+  .input_box button {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .time{
+      width: 100%;
+    margin-top: 50px;
+  }
+  
+    }
